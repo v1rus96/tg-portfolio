@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+:root {
+  --body-bg-color: #e5f4f9;
+  --body-color-light: #8b939c;
+  --body-font: "Roboto", sans-serif;
+  --page-bg-color: #f2f5f7;
+  --body-color: #3d4954;
+  --border-color: #b8bec3;
+  --placeholder: #ccd0d2;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+        .book {
+  background: #fff;
+}
+
+.book-cell {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  /* width: 40%; */
+  height: 250px;
+  margin-right: 1px;
+  background-color: black;
+}
+
+.book-photo {
+  width: 130px;
+  flex-shrink: 0;
+  bottom: -35px;
+  left: 35px;
+  border-radius: 2px;
+  box-shadow: -2px 6px 19px 0px #7f818e;
+  transition: 0.3s ease;
+}
+.book-photo:hover {
+  transform: scale(1.03);
+}
+
+.book-img {
+  flex-shrink: 0;
+}
+
+.book-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.book-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.book-author {
+  margin-top: 3px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.book-content {
+  padding: 0 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 0.5em;
+  margin: 10px;
+}
+.book-sum {
+  margin-top: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.book-see {
+  margin-top: 25px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+  font-weight: 600;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="book-cell">
+        <div class="book-img">
+         <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="" class="book-photo">
+        </div>
+        <div class="book-content">
+         <div class="book-title">BIG MAGIC</div>
+         <div class="book-author">by Elizabeth Gilbert</div>
+         <div class="book-sum">Readers of all ages and walks of life have drawn inspiration and empowerment from Elizabeth Gilbert’s books for years. </div>
+         <div class="book-see">See The Book</div>
+        </div>
+       </div>
+</body>
+</html>

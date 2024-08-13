@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .card {
+            width: 320px;
+            height: 600px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREO17hg6KvLlweeZWN0LCEdi-OXM9qGpbQ9w&s'); /* Replace with actual image */
+            background-size: cover;
+            background-position: center top;
+            border-radius: 25px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 5px solid #fff;
+            object-fit: cover;
+            z-index: 1;
+            position: relative;
+        }
+
+        .card h1, .card h2 {
+            z-index: 1;
+            position: relative;
+        }
+
+        .card h1 {
+            margin: 20px 0 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .company img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .icons a {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .about-me {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, black);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="overlay"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREO17hg6KvLlweeZWN0LCEdi-OXM9qGpbQ9w&s" alt="Kevin Johnson" class="profile-img">
+        <h1>Kevin Johnson</h1>
+        <h2>Marketing Manager</h2>
+        <div class="company">
+            <img src="https://via.placeholder.com/24" alt="Company Logo">
+            <span>Cool Co.</span>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="lni lni-phone"></i></a>
+            <a href="#"><i class="lni lni-envelope"></i></a>
+            <a href="#"><i class="lni lni-comments"></i></a>
+            <a href="#"><i class="lni lni-whatsapp"></i></a>
+        </div>
+        <div class="about-me">
+            <p>Hi, I am Kevin, working as marketing manager at Cool Co.</p>
+        </div>
+    </div>
+</body>
+</html>
